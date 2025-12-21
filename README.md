@@ -80,13 +80,12 @@ digital-health-wallet/
 │   │   ├── components/              # Reusable UI components
 │   │   │   ├── Layout.jsx
 │   │   │   ├── Sidebar.jsx
-│   │   │   ├── Topbar.jsx
-│   │   │   ├── SummaryCard.jsx
-│   │   │   └── ProtectedRoute.jsx
+│   │   │   └── Topbar.jsx
 │   │   │
 │   │   ├── pages/                   # Application pages
-│   │   │   ├── Login.jsx
-│   │   │   ├── Signup.jsx
+│   │   │   ├── Auth
+│   │   │   │   ├── Login.jsx
+│   │   │   │   └──  Signup.jsx
 │   │   │   ├── Dashboard.jsx
 │   │   │   ├── Reports.jsx
 │   │   │   ├── Vitals.jsx
