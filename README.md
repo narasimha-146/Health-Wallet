@@ -68,7 +68,80 @@ manage, track, and share medical reports and vital health data anytime, anywhere
 - Twilio WhatsApp API
 
 ---
-
+📁 Project Structure
+```
+digital-health-wallet/
+│
+├── client/                          # Frontend (ReactJS)
+│   ├── public/                      # Static assets
+│   │   └── index.html
+│   │
+│   ├── src/
+│   │   ├── components/              # Reusable UI components
+│   │   │   ├── Layout.jsx
+│   │   │   ├── Sidebar.jsx
+│   │   │   └── Topbar.jsx
+│   │   │
+│   │   ├── pages/                   # Application pages
+│   │   │   ├── Auth
+│   │   │   │   ├── Login.jsx
+│   │   │   │   └──  Signup.jsx
+│   │   │   ├── Dashboard.jsx
+│   │   │   ├── Reports.jsx
+│   │   │   ├── Vitals.jsx
+│   │   │   ├── Shared.jsx
+│   │   │   └── Profile.jsx
+│   │   │
+│   │   ├── services/                # API integration
+│   │   │   └── api.js                # Axios configuration
+│   │   │
+│   │   ├── styles/                  # CSS files
+│   │   │   ├── auth.css
+│   │   │   ├── dashboard.css
+│   │   │   ├── reports.css
+│   │   │   ├── vitals.css
+│   │   │   └── profile.css
+│   │   │
+│   │   ├── App.js                   # Main app & routes
+│   │   └── index.js                 # React entry point
+│   │
+│   └── package.json
+│
+├── backend/                         # Backend (Node.js + Express)
+│   ├── src/
+│   │   ├── controllers/             # Business logic
+│   │   │   ├── auth.controller.js
+│   │   │   ├── reports.controller.js
+│   │   │   ├── vitals.controller.js
+│   │   │   ├── share.controller.js
+│   │   │   └── profile.controller.js
+│   │   │
+│   │   ├── routes/                  # API routes
+│   │   │   ├── auth.routes.js
+│   │   │   ├── reports.routes.js
+│   │   │   ├── vitals.routes.js
+│   │   │   ├── share.routes.js
+│   │   │   └── profile.routes.js
+│   │   │
+│   │   ├── middleware/              # Custom middleware
+│   │   │   └── auth.middleware.js
+│   │   │
+│   │   ├── config/                  # Configurations
+│   │   │   ├── supabaseClient.js
+│   │   │   └── mailer.js
+│   │   │
+│   │   ├── webhooks/                # External integrations
+│   │   │   └── whatsapp.webhook.js
+│   │   │
+│   │   └── index.js                 # Express app entry point
+│   │
+│   ├── package.json
+│   └── .env                         # Environment variables (gitignored)
+│
+├── README.md                        # Project documentation
+├── .gitignore                       # Ignore node_modules, .env, db files
+└── package-lock.json
+```
 ## ⚙️ Setup Instructions
 
 ### Backend
@@ -89,7 +162,7 @@ EMAIL_USER=yourgmail@gmail.com
 EMAIL_PASS=your_app_password
 TWILIO_ACCOUNT_SID=xxxx
 TWILIO_AUTH_TOKEN=xxxx
-TWILIO_WHATSAPP_NUMBER=whatsapp:+14155238886
+TWILIO_WHATSAPP_NUMBER=whatsapp:whatsapp_nnumber
 ```
 
 ### Frontend
