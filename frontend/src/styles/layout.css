@@ -1,0 +1,159 @@
+/* App Layout */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100vw;
+  background: #f4f6f8;
+  font-family: Inter, sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background: #6a5acd;
+  color: white;
+  padding: 1.5rem 1rem;
+}
+
+.sidebar h2 {
+  margin-bottom: 2rem;
+  font-size: 18px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.sidebar li:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Main area */
+.main-content {
+  flex: 1;
+  display: flex;
+}
+
+/* Topbar */
+.topbar {
+  height: 60px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.search-box {
+  width: 300px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+}
+
+/* Page Content */
+.page {
+  padding: 1.5rem;
+}
+
+/* Cards */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.card {
+  background: white;
+  color: #6a5acd;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Filters */
+.filters {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.filters input,
+.filters select,
+.filters button {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+th {
+  background: #f9fafb;
+  font-size: 14px;
+}
+
+.topbar {
+  height: 60px;
+  background: #6a5acd;
+  border-bottom: 1px solid #6a5acd;
+  padding: 0 1.5rem;;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+}
+
+.app-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #f4f5f8;
+}
+
+.logout-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.logout-btn:hover {
+  background: #dc2626;
+}

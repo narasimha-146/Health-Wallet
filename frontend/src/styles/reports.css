@@ -1,0 +1,153 @@
+.reports-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #25e552;
+}
+
+.upload-btn {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.upload-btn:hover {
+  background: #43a047;
+}
+
+.table-wrapper {
+  background: white;
+  border-radius: 10px;
+  margin-top: 1rem;
+  overflow: hidden;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 2px solid #797a7a;
+}
+
+th {
+  background: #f9fafb;
+  color: #db1c55ca;
+}
+td {
+  background: #f9fafb;
+  color: #151313ca;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.card {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.modal {
+  background: white;
+  padding: 1.5rem;
+  height: 50%;
+  width: 50%;
+  border-radius: 12px;
+  gap: 20px;
+}
+
+.modal select {
+  width: 95%;
+  padding: 12px 14px;
+  margin-bottom: 1rem;
+  border-radius: 25px;
+  border: none;
+  background: #f1f5f9;
+  color: #111827;
+  font-size: 14px;
+  outline: none;
+}
+
+.modal input {
+  width: 90%;
+  padding: 12px 14px;
+  margin-bottom: 1rem;
+  border-radius: 25px;
+  border: none;
+  background: #f1f5f9;
+  color: #111827;
+  font-size: 14px;
+  outline: none;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.modal-actions button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 0.5rem;
+  border-radius: 25px;
+  border: none;
+  background: #92f195;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+.modal-actions .secondary {
+  width: 100%;
+  padding: 12px;
+  margin-top: 0.5rem;
+  border-radius: 25px;
+  border: none;
+  background: #e4ef92;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.action-icons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.action-icons a,
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #2563eb;
+  font-size: 18px;
+}
+
+.action-icons a:hover,
+.icon-btn:hover {
+  color: #1e40af;
+}

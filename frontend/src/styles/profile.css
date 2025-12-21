@@ -1,0 +1,39 @@
+.profile-card {
+  background: rgb(235, 149, 74);
+  padding: 1.5rem;
+  border-radius: 12px;
+  max-width: 400px;
+  margin-bottom: 2rem;
+}
+
+.profile-card label {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0787a0;
+}
+
+.profile-card input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  color: rgb(26, 27, 30);
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.profile-actions input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  color: rgb(26, 27, 30);
+  font-weight: 500;
+  font-size: 15px;
+}
+.profile-actions {
+  display: flex;
+  gap: 10px;
+}
