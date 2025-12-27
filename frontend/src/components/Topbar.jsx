@@ -1,8 +1,12 @@
+import { useNavigate } from "react-router-dom";
 export default function Topbar() {
+  const navigate = useNavigate();
+
   const handleLogout = () => {
     localStorage.clear();
-    window.location.href = "/login";
+    navigate("/login");
   };
+
 
   return (
     <div className="topbar">
